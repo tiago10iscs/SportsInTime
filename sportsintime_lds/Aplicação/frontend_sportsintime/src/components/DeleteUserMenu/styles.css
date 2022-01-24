@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteUserContainer {
+  background-color: #fff;
+  width: 380px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.topBarDelete {
+  width: 100%;
+  height: 30%;
+  background: #0971c1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Outfit;
+  font-weight: bolder;
+  font-size: 22px;
+  color: #fff;
+}
+
+.closeButton {
+  font-size: 30px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  color: #dbdbdb;
+}
+
+.btn-deleteUser {
+  background: #0971c1;
+  color: white;
+  padding: 0.2rem 1.1rem;
+  border: none;
+  border-radius: 4px;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+.btn-deleteUser:hover {
+  cursor: pointer;
+  background-color: #044d85;
+}
+
+.deleteUserConfirm {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.deleteText {
+  font-family: Outfit;
+  font-size: 18px;
+  text-align: center;
+}

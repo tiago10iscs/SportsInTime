@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+Link {
+  z-index: 1;
+}
+
+.event_state {
+  font-family: Outfit;
+  font-size: 12px;
+  padding-left: 18px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.state {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding: 0px 5px;
+}
+
+.state_live {
+  color: red;
+  font-weight: bold;
+}
+
+.event_global {
+  margin-left: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeTeam_name {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Outfit;
+  font-size: 18px;
+  padding: 3px 8px;
+  width: 50%;
+}
+
+.awayTeam_name {
+  display: flex;
+  justify-content: flex-start;
+  font-family: Outfit;
+  font-size: 18px;
+  padding: 3px 8px;
+  width: 50%;
+}
+
+.result {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #0971c1;
+  padding: 3px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-align: center;
+  width: 10%;
+}
+
+.event_time {
+  font-family: Outfit;
+  font-size: 14px;
+  color: red;
+}
+
+.HalfGoals {
+  font-family: Outfit;
+  font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 15px;
+  white-space: nowrap;
+}
+
+.events {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+  height: 80px;
+  border-radius: 10px;
+  color: black;
+}
+
+.events:hover {
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+}
+
+.emptyLive {
+  font-family: Outfit;
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* PREDICT BOX */
+
+.predict_box {
+  margin-right: 10px;
+  width: 180px;
+  height: 70px;
+  z-index: 2px;
+}
+
+/*Media Queries Predict Box*/
+@media only screen and (max-width: 720px) {
+  .homeTeam_name {
+    font-size: 14px;
+  }
+
+  .awayTeam_name {
+    font-size: 14px;
+  }
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 900px) {
+  .homeTeam_name {
+    font-family: Outfit;
+    padding: 2px 6px;
+  }
+
+  .awayTeam_name {
+    font-family: Outfit;
+    padding: 2px 6px;
+  }
+
+  .result {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0971c1;
+    padding: 2px 6px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  .HalfGoals {
+    display: none;
+  }
+
+  .event_time {
+    font-family: Outfit;
+    font-size: 12px;
+    color: red;
+    padding-right: 40px;
+  }
+
+  .event_state {
+    font-family: Outfit;
+    font-size: 10.5px;
+    padding-left: 18px;
+    width: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .event_state {
+    font-family: Outfit;
+    font-size: 9px;
+    padding-left: 15px;
+    width: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .HalfGoals {
+    display: none;
+  }
+
+  .event_time {
+    font-family: Outfit;
+    font-size: 12px;
+    color: red;
+    margin-right: 40px;
+  }
+}

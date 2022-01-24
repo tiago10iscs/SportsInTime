@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+.profile-page {
+  margin-top: 80px;
+}
+
+.user-content {
+  font: Outfit;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-family: Outfit;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.email {
+  font-family: Outfit;
+  font-size: 22px;
+  color: white;
+}
+
+.user-image {
+  width: 15%;
+}
+
+.classification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 17px;
+}
+
+.rank-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank-image img {
+  width: 40%;
+}
+
+.user-rank {
+  font-family: Outfit;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  width: 15px;
+  height: 55px;
+}
+
+.user-points {
+  font-family: Outfit;
+  font-size: 21px;
+  color: white;
+  display: flex;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+  padding: 20px;
+}
+.change-passwordBtt {
+  font-family: Outfit;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background-color: grey;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.delete-accountBtt {
+  font-family: Outfit;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  padding: 6px 32px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 12px;
+}

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+.accessDenied {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  color: red;
+}
+
+.text {
+  font-family: Outfit;
+  font-size: 32px;
+}

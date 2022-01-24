@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+  background-color: #fff;
+  width: 380px;
+  height: 330px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.loginTopBar {
+  width: 100%;
+  height: 20%;
+  background: #0971c1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Outfit;
+  font-weight: bolder;
+  font-size: 26px;
+  color: #fff;
+}
+
+.closeButton {
+  font-size: 30px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  color: #dbdbdb;
+}
+
+.Login {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.Login-Field {
+  border: none;
+  width: 250px;
+  background: #d3d3d3;
+  padding: 0.8rem;
+  margin: 5px;
+  border-radius: 8px;
+  font-family: Outfit;
+  font-size: 14px;
+}
+
+.Login-Field:focus {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.fieldTitle {
+  margin-left: 60px;
+  margin-right: auto;
+  margin-bottom: -5px;
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(88, 88, 88);
+}
+
+.Login-Btn {
+  background: #0971c1;
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+.Login-Btn:hover {
+  cursor: pointer;
+  background-color: #044d85;
+}
+
+.redirectText {
+  margin-top: 0.5rem;
+  font-family: Outfit;
+  font-size: 15px;
+  color: #0971c1;
+  text-decoration: underline;
+}
+
+.redirectText:hover {
+  cursor: pointer;
+  font-size: 15.5px;
+  color: #044d85;
+}
+
+.Login-Group {
+  display: flex;
+  flex-flow: column;
+}
+
+.Login-Error-Email {
+  margin-left: 15px;
+  font-family: Outfit;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  color: #ff4949;
+  padding-bottom: 6px;
+}
+
+.Login-Error-Password {
+  margin-left: 15px;
+  font-family: Outfit;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  padding-bottom: 7px;
+  color: #ff4949;
+}

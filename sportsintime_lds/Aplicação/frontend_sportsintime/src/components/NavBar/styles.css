@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+}
+
+.logo {
+  width: 135px;
+  height: 100px;
+  cursor: pointer;
+  padding: 0 2rem;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  padding: 10px;
+  white-space: nowrap;
+  padding: 0 2rem;
+}
+
+.menuItem {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 18px;
+  word-spacing: 6px;
+  cursor: pointer;
+  left: 0;
+}
+
+.menuItem:hover {
+  font-size: 18.5px;
+  color: #666363;
+}
+
+.adminTitle {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  white-space: nowrap;
+  padding: 0 2rem;
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 24px;
+  word-spacing: 10px;
+}
+
+.buttonMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  padding-right: 20px;
+}
+
+button {
+  margin: 5px;
+  margin-right: 10px;
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  background: #0971c1;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #044d85;
+}
+
+.bars {
+  display: none;
+  color: #0971c1;
+  padding-right: 1rem;
+}
+
+.iBars {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.iBars:hover {
+  color: #044d85;
+}
+
+.side-bar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  right: -100%;
+  transition: 850ms;
+}
+
+.side-bar.active {
+  right: 0;
+  transition: 350ms;
+}
+
+.sbField {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 18px;
+  color: #0971c1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sbField:hover {
+  color: #044d85;
+  cursor: pointer;
+}
+
+.closebtn {
+  position: absolute;
+  text-decoration: none;
+  font-family: Outfit;
+  font-weight: bold;
+  font-size: 18px;
+  color: #0971c1;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebtn:hover {
+  color: #044d85;
+  cursor: pointer;
+}
+
+.userBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 15vw;
+  flex-flow: row;
+}
+
+.usericon {
+  padding: 5px;
+  font-size: 1.5rem;
+  color: #0971c1;
+  padding-left: 5px;
+}
+
+.username {
+  color: black;
+  padding: 5px;
+  margin-right: 5px;
+  font-family: Outfit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.username:hover {
+  font-size: 20.5px;
+  color: #666363;
+}
+
+@media screen and (min-width: 956px) {
+  .side-bar.active {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .nav {
+    height: 60px;
+  }
+
+  .logo {
+    width: 115px;
+    height: 80px;
+  }
+
+  .menuItem {
+    font-size: 14px;
+  }
+
+  .menuItem:hover {
+    font-size: 14.5px;
+    color: #666363;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 2px 8px;
+  }
+
+  .usericon {
+    padding: 3px;
+    color: #0971c1;
+  }
+
+  .username {
+    font-size: 16px;
+  }
+
+  .username:hover {
+    font-size: 16.5px;
+    color: #666363;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .nav {
+    height: 60px;
+  }
+
+  .logo {
+    width: 115px;
+    height: 80px;
+  }
+
+  .menuItem {
+    display: none;
+  }
+
+  .adminTitle {
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
+  .buttonMenu {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    position: absolute;
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .nav {
+    height: 60px;
+  }
+
+  .logo {
+    padding-right: 5px;
+    width: 115px;
+    height: 80px;
+  }
+
+  .menuItem {
+    display: none;
+  }
+
+  .adminTitle {
+    font-size: 15px;
+  }
+
+  .buttonMenu {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    position: absolute;
+    right: 25px;
+  }
+}

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+/* Value Bars Styles */
+.valuesBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.value {
+  font-family: Outfit;
+  font-size: 16px;
+  color: #fff;
+  margin: 4px;
+}
+
+.bar {
+  margin: 4px;
+  background: #fff;
+  height: 15px;
+  width: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.bar.home {
+  justify-content: flex-end;
+}
+
+.bar.away {
+  justify-content: flex-start;
+}
+
+.valueBar {
+  background-color: #0971c1;
+  height: 100%;
+
+  transition: width 2s;
+}
+
+@media screen and (max-width: 1120px) {
+  .value {
+    font-size: 14px;
+  }
+
+  .bar {
+    width: 400px;
+    height: 13px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .value {
+    font-size: 12px;
+  }
+
+  .bar {
+    border-radius: 3px;
+    width: 190px;
+    height: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .value {
+    font-size: 12px;
+  }
+
+  .bar {
+    border-radius: 2px;
+    width: 140px;
+    height: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .value {
+    font-size: 12px;
+  }
+
+  .bar {
+    border-radius: 1px;
+    width: 100px;
+    height: 8px;
+  }
+}
+
+/* Stats Line Styles */
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: Outfit;
+  color: #fff;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.statsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

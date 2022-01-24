@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+.GamePage {
+  margin-top: 80px;
+  height: 100%;
+  width: 100%;
+}
+
+.time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Outfit;
+  font-size: 24px;
+  color: rgb(240, 56, 56);
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 5px rgb(184, 16, 16);
+}
+
+.GameResult {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.homeTeam {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3px 15px;
+  width: 45%;
+}
+
+.awayTeam {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px 15px;
+  width: 45%;
+}
+
+.match_result {
+  font-family: Outfit;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #0971c1;
+  padding: 1px 22px;
+  border-radius: 3px;
+  width: 10%;
+  height: 100%;
+}
+
+.event-global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+
+.buttonsGamePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.button {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 8px 8px;
+  color: white;
+  background-color: #0971c1;
+  text-align: center;
+  width: 200px;
+  border: none;
+}
+
+.button:disabled,
+button[disabled] {
+  background-color: #999999;
+  color: #666666;
+}
+
+.name {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px #000000;
+  margin-top: 40px;
+  white-space: nowrap;
+  height: 10%;
+}
+
+.teamLogo {
+  position: absolute;
+  opacity: 30%;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 775px) {
+  .name {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .teamLogo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+}
+
+/* TABS CONTAINER */
+
+.tabsBox {
+  margin: 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+/* Lineups Tab */
+.container {
+  display: flex;
+  flex-flow: column;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.lineupsTitle {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+
+  font-family: Outfit;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+/* Lineups Container */
+.lineupContainer {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 20%;
+  font-size: 20px;
+}
+
+.system {
+  color: #0971c1;
+  font-family: Outfit;
+  padding: 0.2rem 0.2rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.system.home {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+.system.away {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+.systemTitle {
+  padding: 0rem 0.2rem;
+  font-weight: 600;
+}
+
+.systemText {
+  padding: 0rem 0.3rem;
+}
+
+/* Player Box */
+.playerBoxContainer {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.playerDiv {
+  font-family: Outfit;
+  color: #fff;
+  display: flex;
+  flex-flow: row;
+}
+
+.playerDiv.home {
+  justify-content: flex-start;
+}
+
+.playerDiv.away {
+  justify-content: flex-end;
+}
+
+.number {
+  width: 20px;
+  font-weight: bolder;
+  padding: 0rem 0.2rem;
+}
+
+.player_name {
+  text-transform: capitalize;
+  padding: 0rem 0.6rem;
+  font-weight: 200;
+}
+
+.tag {
+  font-weight: bold;
+  padding: 0rem 0.2rem;
+}
+
+.homeTeamLineup {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.awayTeamLineup {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .lineupContainer {
+    font-size: 18px;
+  }
+
+  .lineupsTitle {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .lineupContainer {
+    font-size: 16px;
+  }
+
+  .lineupsTitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .system {
+    display: flex;
+    flex-flow: column;
+  }
+}

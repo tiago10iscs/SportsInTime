@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap%22");
+
+.standingLine {
+  height: 50px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: Outfit;
+  margin: 5px 0px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.standingLine.title {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.position.title {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+
+.teamName.title {
+  width: 290px;
+}
+
+.position {
+  height: 100%;
+  width: 60px;
+  background-color: #0971c1;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.teamInfo {
+  height: 100%;
+  width: 300px;
+  padding-right: 20px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+
+  margin-right: auto;
+}
+
+.teamBadge {
+  height: 40px;
+  width: 40px;
+  padding-right: 10px;
+}
+
+.teamName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 250px;
+  font-size: 20px;
+}
+
+.statsMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  height: 100%;
+  width: 330px;
+}
+
+.matchesPlayed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 15%;
+}
+
+.wins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 15%;
+}
+
+.draws {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 15%;
+}
+
+.losses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 15%;
+}
+
+.goals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 25%;
+  padding: 0px 5px;
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 15%;
+}
+
+@media screen and (max-width: 745px) {
+  .standingLine {
+    height: 30px;
+  }
+
+  .teamName {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .position {
+    width: 30px;
+    font-size: 16px;
+  }
+
+  .teamInfo {
+    width: 240px;
+    font-size: 16px;
+  }
+
+  .statsMenu {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .teamBadge {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .teamName {
+    width: 200px;
+  }
+
+  .position {
+    width: 30px;
+  }
+
+  .teamInfo {
+    width: 225px;
+    padding-right: 0px;
+  }
+
+  .statsMenu {
+    width: 250px;
+    font-size: 16px;
+  }
+}
